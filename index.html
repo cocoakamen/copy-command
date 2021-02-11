@@ -8,6 +8,9 @@
 <body>
   <div class="container">
 
+    <div id="mode-select">
+      <span class="mode-btn" id="mode1">mode1</span><span class="mode-btn" id="mode2">mode2</span>
+    </div>
     <div id="variable-text-config">
       <span>
         <label>ブランチ名、タグ名など1</label>
@@ -22,39 +25,44 @@
     </div>
 
     <div id="command-list">
-      <!-- ここから -->        
-      <p>
-        タグを作成する<br>
-        <code>git tag タグ名</code>
-        <span class="command-text">git tag  <span class="replace-text1">タグ名</span> </span>
-      </p>
-      <p>
-        <input class="copy-text" type="text" readonly></input><span class="copy-btn">copy</span>
-      </p>
-      <!-- ここまで -->        
 
-      <!-- ここから -->        
-      <p>
-        リモートリポジトリ（origin）にタグを公開する<br>
-        <code>git push origin タグ名</code>
-        <span class="command-text">git push origin <span class="replace-text1">タグ名</span></span>
-      </p>
-      <p>
-        <input class="copy-text" type="text" readonly></input><span class="copy-btn">copy</span>
-      </p>
-      <!-- ここまで -->        
+      <div id="command-mode1">
+        <!-- ここから -->        
+        <p>
+          タグを作成する<br>
+          <code>git tag タグ名</code>
+          <span class="command-text">git tag  <span class="replace-text1">タグ名</span> </span>
+        </p>
+        <p>
+          <input class="copy-text" type="text" readonly></input><span class="copy-btn">copy</span>
+        </p>
+        <!-- ここまで -->        
+      </div>
+      
 
-      <!-- ここから -->        
-      <p>
-        元のブランチを指定して新しいブランチを作成してチェックアウトする<br>
-        <code>git branch -b 新しいブランチ名 元のブランチ名</code>
-        <span class="command-text">git branch -b <span class="replace-text1">新しいブランチ名</span> <span class="replace-text2">元のブランチ名</span></span>
-      </p>
-      <p>
-        <input class="copy-text" type="text" readonly></input><span class="copy-btn">copy</span>
-      </p>
-      <!-- ここまで -->        
+      <div id="command-mode2" hidden>
+        <!-- ここから -->        
+        <p>
+          リモートリポジトリ（origin）にタグを公開する<br>
+          <code>git push origin タグ名</code>
+          <span class="command-text">git push origin <span class="replace-text1">タグ名</span></span>
+        </p>
+        <p>
+          <input class="copy-text" type="text" readonly></input><span class="copy-btn">copy</span>
+        </p>
+        <!-- ここまで -->        
 
+        <!-- ここから -->        
+        <p>
+          元のブランチを指定して新しいブランチを作成してチェックアウトする<br>
+          <code>git branch -b 新しいブランチ名 元のブランチ名</code>
+          <span class="command-text">git branch -b <span class="replace-text1">新しいブランチ名</span> <span class="replace-text2">元のブランチ名</span></span>
+        </p>
+        <p>
+          <input class="copy-text" type="text" readonly></input><span class="copy-btn">copy</span>
+        </p>
+        <!-- ここまで -->        
+      </div>
     </div>
   </div>
 

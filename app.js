@@ -14,6 +14,18 @@ window.onload = ()=>{
       copyTextElements[i].value = document.getElementsByClassName('command-text')[i].textContent;
     }
   }
+
+  const changeMode = function(modeType) {
+    document.getElementById("command-mode1").hidden = true;
+    document.getElementById("command-mode2").hidden = true;
+
+    if (modeType == 1) {
+      document.getElementById("command-mode1").hidden = false;
+    } else if (modeType == 2) {
+      document.getElementById("command-mode2").hidden = false;
+    }
+  }
+
   // commandを書いているところは非表示にしてInputに同じ内容を入れる
   // 文字列置換えにDOM操作を利用しているため
   for (let i=0; i<commandTextElements.length; i++) {
@@ -41,6 +53,14 @@ window.onload = ()=>{
     }
 
     updateCopyText();
+  }
+
+  document.getElementById('mode1').onclick = ()=>{
+    changeMode(1);
+  }
+
+  document.getElementById('mode2').onclick = ()=>{
+    changeMode(2);
   }
 
   // コピーボタン
