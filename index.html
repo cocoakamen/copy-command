@@ -1,0 +1,64 @@
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div id="variable-text-config">
+      <span>
+        <label>ブランチ名、タグ名など1</label>
+        <input type="text" id="input-replace-text1" value="" placeholder="">  
+      </span>
+
+      <span>
+        <label>ブランチ名、タグ名など2</label>
+        <input type="text" id="input-replace-text2" value="" placeholder="">  
+      </span>
+
+    </div>
+
+    <div id="command-list">
+      <!-- ここから -->        
+      <p>
+        タグを作成する<br>
+        <code>git tag タグ名</code>
+        <span class="command-text">git tag  <span class="replace-text1">タグ名</span> </span>
+      </p>
+      <p>
+        <input class="copy-text" type="text" readonly></input><span class="copy-btn">copy</span>
+      </p>
+      <!-- ここまで -->        
+
+      <!-- ここから -->        
+      <p>
+        リモートリポジトリ（origin）にタグを公開する<br>
+        <code>git push origin タグ名</code>
+        <span class="command-text">git push origin <span class="replace-text1">タグ名</span></span>
+      </p>
+      <p>
+        <input class="copy-text" type="text" readonly></input><span class="copy-btn">copy</span>
+      </p>
+      <!-- ここまで -->        
+
+      <!-- ここから -->        
+      <p>
+        元のブランチを指定して新しいブランチを作成してチェックアウトする<br>
+        <code>git branch -b 新しいブランチ名 元のブランチ名</code>
+        <span class="command-text">git branch -b <span class="replace-text1">新しいブランチ名</span> <span class="replace-text2">元のブランチ名</span></span>
+      </p>
+      <p>
+        <input class="copy-text" type="text" readonly></input><span class="copy-btn">copy</span>
+      </p>
+      <!-- ここまで -->        
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+.container {
+  margin:10%;
+  margin-top:20px;
+  font-size:12px;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  background: #00bcd4;
+  color: white;
+  transition: .4s;
+}
+
+.btn:hover {
+  background: #569199;
+  color: white;
+  cursor: pointer;
+}
+
+input[type='text'] {
+	font: 20px sans-serif;
+  box-sizing: border-box;
+  width:100%;
+	max-width: 800px;
+  padding: 0.2em;
+  margin-bottom: 1em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #302f2f;
+	border: none;
+	border-bottom: 1px solid #293955;
+	background: transparent;
+}
+
+input[type='text']:focus {
+	border-bottom: 1px solid #00bcd4;
+	outline: none;
+}
+
+.copy-text{
+  font-size:15px;
+  margin-bottom:20px;
+}
+.copy-btn {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  background: #00bcd4;
+  color: white;
+  transition: .4s;
+}
+
+.copy-btn:hover {
+  background: #569199;
+  color: white;
+  cursor: pointer;
+}
+
+#variable-text-config span{
+  display: inline-block;
+  width:40%;
+  margin-right:1em;
+}
+
+#command-list{
+  margin-top:2em;
+}
+
+code{
+  padding:0.3em;
+  margin:0.2em;
+  font-size:10px;
+  background-color: #f0fff0;
+}
